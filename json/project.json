@@ -1,0 +1,60 @@
+{
+	"projects": [
+		{
+			"name": "Get Next Line",
+			"giturl": {
+				"huburl": "https://www.github.com/Biggybi/gnl",
+				"laburl": ""
+			},
+			"type": "C"
+		},
+		{
+			"name": "ft_ls",
+			"giturl": {
+				"huburl": "https://www.github.com/Biggybi/ft_ls",
+				"laburl": ""
+			},
+			"type": "C"
+		},
+		{
+			"name": "ft_printf",
+			"giturl": {
+				"huburl": "https://www.github.com/Biggybi/ft_printf",
+				"laburl": ""
+			},
+			"type": "C"
+		},
+		{
+			"name": "BSQ",
+			"giturl": {
+				"huburl": "https://www.github.com/Biggybi/bsq",
+				"laburl": ""
+			},
+			"type": "C"
+		},
+		{
+			"name": "Site web",
+			"giturl": {
+				"huburl": "https://www.github.com/Biggybi/website",
+				"laburl": ""
+			},
+			"type": "JS"
+		},
+		{
+			"name": "Dotfiles",
+			"giturl": {
+				"huburl": "https://www.github.com/Biggybi/dotfiles",
+				"laburl": ""
+			},
+			"type": "Vim"
+		},
+		{
+			"name": "Resume - CV",
+			"giturl": {
+				"huburl": "https://www.github.com/Biggybi/resume",
+				"laburl": ""
+			},
+			"type": "HTML / CSS / Bash"
+		}
+	]
+}

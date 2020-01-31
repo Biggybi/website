@@ -1,0 +1,138 @@
+body
+{
+	/*font-family: ParmaPetitRegular;*/
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	font-size: 20px;
+	font-family: "gotham";
+	background: #2c2c2c;
+	/*	font-size: 1 rem;
+	 *	background: fixed center top no-repeat black url('images/irish_pub.jpg');
+	 *	background: url(fond/fondsiteessai2.jpg) no-repeat top center black;
+	 *	background-size: 80%;
+	 *	background: url(fond/fondcrade2.jpg) no-repeat top center black;
+	 *	background-color: red;
+	 */
+}
+
+a
+{
+	text-decoration: none;
+	color: green;
+}
+
+#project_wrap
+{
+	/* position: relative; */
+	width: 930px;
+	margin: 0 auto;
+	padding: 0;
+	/* background: red; */
+	/* text-align: center; */
+}
+
+.project
+{
+	position: relative;
+	display: inline-block;
+	/* display: inline-block; */
+	height: 200px;
+	/* align: left; */
+	padding: 0;
+	margin: 7px 5px 7px 5px;
+	/* padding: 5px; */
+	width: 296px;
+	/* position: relative; */
+	background: #383838;
+	border-radius: 25px;
+}
+
+/* .project p */
+/* { */
+/* 	/1* padding-left: 10px; *1/ */
+/* 	/1* position: relative; *1/ */
+/* } */
+
+.project h3
+{
+	/* position: relative; */
+	/* display: block; */
+	padding: 5px 0 0 8px;
+	display: inline-block;
+	height: 35px;
+	/* margin-top: 5%; */
+	/* background: blue; */
+	/* padding: 2% 0 0% 2%; */
+	margin: 0;
+}
+
+/* .project p */
+/* { */
+
+/* 	height: 0px; */
+/* } */
+
+.projectinner
+{
+	display: flex;
+	position: relative;
+	pointer-events: none;
+	z-index: 1;
+	/* background: green; */
+	/* padding: 0; */
+	margin: 0;
+	height: 165px;
+}
+
+.githuburl, .gitlaburl
+{
+	pointer-events: all;
+	margin: 0 auto;
+	padding: 0;
+	width: 20px;
+	height: 20px;
+	/* float: right; */
+}
+
+.giturl
+{
+	/* background: red; */
+	margin: 0 0 0 auto;
+	padding: 0 20px 5px 0;
+	float: right;
+	/* display: inline-block; */
+	align-self: flex-end;
+}
+
+.gitlaburl img
+{
+	margin: -10px;
+	padding: 0;
+	width: 55px;
+}
+
+.githuburl
+{
+	display: inline-block;
+}
+
+.projecturl
+{
+	position: absolute;
+	/* background-color: red; */
+	/* display: inline-block; */
+	height: 100%;
+	width: 100%;
+	/* z-index: 3; */
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+}
+
+.header
+{
+	display: inline-block;
+	/* position: relative; */
+}
