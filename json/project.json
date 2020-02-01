@@ -2,59 +2,88 @@
 	"projects": [
 		{
 			"name": "Get Next Line",
+			"id": "gnl",
 			"giturl": {
 				"huburl": "https://www.github.com/Biggybi/gnl",
 				"laburl": ""
 			},
-			"type": "C"
+			"summary": "Get next line of a buffer at each call",
+			"summary_fr": "Obtenir la ligne suivante d'un fichier à chaque appel",
+			"status": "finished",
+			"type": ["C"]
 		},
 		{
 			"name": "ft_ls",
+			"id": "ft_ls",
 			"giturl": {
 				"huburl": "https://www.github.com/Biggybi/ft_ls",
 				"laburl": ""
 			},
-			"type": "C"
+			"summary": "Implementation of Unix <strong>ls</strong> command",
+			"summary_fr": "Implémentation la commande Unix <strong>ls</strong>",
+			"status": "finished",
+			"type": ["C"]
 		},
 		{
 			"name": "ft_printf",
+			"id": "ft_printf",
 			"giturl": {
 				"huburl": "https://www.github.com/Biggybi/ft_printf",
 				"laburl": ""
 			},
-			"type": "C"
+			"summary": "Implementation of stdio.h <strong>printf</strong> function",
+			"summary_fr": "Implémentation de <strong>printf</strong> de stdio.h",
+			"status": "ongoing",
+			"type": ["C"]
 		},
 		{
 			"name": "BSQ",
+			"id": "bsq",
 			"giturl": {
 				"huburl": "https://www.github.com/Biggybi/bsq",
 				"laburl": ""
 			},
-			"type": "C"
+			"summary": "Display the <strong>b</strong>iggest <strong>sq</strong>uare in a treacherous map",
+			"summary_fr": "<strong>b</strong>ig <strong>sq</strong>uare : Afficher le plus grand carré sur une carte piégée",
+
+			"status": "finished",
+			"type": ["C"]
 		},
 		{
-			"name": "Site web",
+			"name": "Website",
+			"id": "website",
 			"giturl": {
 				"huburl": "https://www.github.com/Biggybi/website",
 				"laburl": ""
 			},
-			"type": "JS"
+			"summary": "This website, coded from scratch",
+			"summary_fr": "Ce site web, codé depuis rien",
+			"status": "ongoing",
+			"type": ["Node", "JS"]
 		},
 		{
 			"name": "Dotfiles",
+			"id": "dotfiles",
 			"giturl": {
 				"huburl": "https://www.github.com/Biggybi/dotfiles",
 				"laburl": ""
 			},
-			"type": "Vim"
+			"summary": "My Linux config files for <strong>Vim</strong>, <strong>bash</strong>, and more, with easy installation script",
+			"summary_fr": "Mes fichiers de configuration pour <strong>Vim</strong>, <strong>bash</strong>, et plus, avec script d'installation",
+			"status": "never ending",
+			"type": ["Bash", "Vim"]
 		},
 		{
-			"name": "Resume - CV",
+			"name": "Résumé",
+			"id": "cv",
 			"giturl": {
 				"huburl": "https://www.github.com/Biggybi/resume",
 				"laburl": ""
 			},
-			"type": "HTML / CSS / Bash"
+			"summary": "My humble résumé, build from Markdown to PDF and HTML",
+			"summary_fr": "Mon humble CV, compilé depuis Markdown en PDF et HTML",
+			"status": "ongoing",
+			"type": ["CSS", "MD", "Bash"]
 		}
 	]
 }
