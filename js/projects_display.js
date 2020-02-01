@@ -1,56 +1,22 @@
-// function one_project_html(project_json) {
-// 	var project_html = [];
-// 	project_html.push('<div class="project">',
-// 		'<h3>', project_json.name, '</h3>',
-// 		'<a class="projecturl" href="#"></a>',
-// 		'<div class="projectinner">',
-// 		'<p>', project_json.type, '</p>',
-// 		'<div class="giturl">',
-// 		'<a class="gitlaburl" href="', project_json.giturl.laburl, '">',
-// 		'<img alt="" src="icons/gitlab/gitlab-icon-1-color-black-rgb.png">',
-// 		'</a>',
-// 		'<a class="githuburl" href="', project_json.giturl.huburl, '">',
-// 		'<img alt="" src="icons/GitHub-Mark/PNG/GitHub-Mark-32px.png">',
-// 		'</a>',
-// 		'</div>',
-// 		'</div>',
-// 		'</div>');
-// 	project_html = project_html.join('');
-// 	return (project_html);
-// }
-
-// var xhttp = new XMLHttpRequest();
-// xhttp.onreadystatechange = function() {
-// 	if (this.readyState == 4 && this.status == 200) {
-// 		var response = JSON.parse(xhttp.responseText);
-// 		var projects = response.projects;
-// 		var projects_html = '';
-// 		var i = -1;
-// 		while (projects[++i]){
-// 			projects_html += one_project_html(projects[i]);
-// 		}
-// 		document.getElementById('project_wrap').innerHTML = projects_html;
-// 	}
-// };
-// xhttp.open("GET", "json/project.json", true);
-// xhttp.send();
-
-function projectTemplate(project_json) {
+function projectTemplate(projectTemplate) {
 return `
-	<div class="project">
-	<h3> ${project_json.name} </h3>
-	<a class="projecturl" href="#"></a>
-	<div class="projectinner">
-	<p> ${project_json.type} </p>
-	<div class="giturl">
-	<a class="gitlaburl" href=" ${project_json.giturl.laburl} ">
-	<img alt="" src="icons/gitlab/gitlab-icon-1-color-black-rgb.png">
-	</a>
-	<a class="githuburl" href=" ${project_json.giturl.huburl} ">
-	<img alt="" src="icons/GitHub-Mark/PNG/GitHub-Mark-32px.png">
-	</a>
-	</div>
-	</div>
+	<div class="project" id ="${projectTemplate.id}">
+		<div class="projectHeader">
+			<h3> ${projectTemplate.name} </h3>
+			<h4> ${projectTemplate.type.join(" - ")} </h4>
+		</div>
+		<a class="projecturl" href="#"></a>
+		<div class="projectinner">
+			<div class="summary"> ${projectTemplate.summary} </div>
+		</div>
+		<div class="giturl">
+			<a class="gitlaburl" href=" ${projectTemplate.giturl.laburl} ">
+				<img alt="" src="icons/gitlab/gitlab-icon-1-color-black-rgb.png">
+			</a>
+				<a class="githuburl" href=" ${projectTemplate.giturl.huburl} ">
+				<img alt="" src="icons/GitHub-Mark/PNG/GitHub-Mark-32px.png">
+			</a>
+		</div>
 	</div>
 	`;
 }
@@ -60,7 +26,6 @@ xhttp.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
 		var response = JSON.parse(xhttp.responseText);
 		var projectsData = response.projects;
-		// ${projectsData.map(projectTemplate).join('')} `
 		document.getElementById('project_wrap').innerHTML = `
 		${projectsData.map(projectTemplate).join('')} `
 	}
