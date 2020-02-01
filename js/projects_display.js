@@ -33,3 +33,39 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "json/project.json", true);
 xhttp.send();
 
+var summary = document.getElementsByClassName('summary');
+console.log(summary);
+// var summary_fr = document.getElementsByClassName("summary_fr");
+var button_fr = document.getElementById('button_fr');
+console.log(button_fr);
+var button_en = document.getElementById('button_en');
+console.log(button_en);
+
+var currentLang = "en";
+button_en.onclick = function() {
+	if (currentLang !== "en")
+	{
+		var i = -1;
+		while (summary[++i])
+			summary[i].textContent = projectsData[i].summary;
+		console.log("switch to en");
+	}
+	currentLang = "en";
+}
+button_fr.onclick = function() {
+	if (currentLang !== "fr")
+	{
+		var i = -1;
+		while (summary[++i])
+			summary[i].textContent = projectsData[i].summary_fr;
+		console.log("coucou");
+		console.log("switch to fr");
+	}
+	currentLang = "fr"
+}
+
+// function setupEvents()
+// {
+// }
+
+// window.onload = function() { setupEvents()};
