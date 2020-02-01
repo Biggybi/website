@@ -47,6 +47,8 @@ button_en.onclick = function() {
 		while (summary[++i])
 			summary[i].textContent = projectsData[i].summary;
 		console.log("switch to en");
+		button_en.className = 'current_language'
+		button_fr.className = ''
 	}
 	currentLang = "en";
 }
@@ -59,6 +61,8 @@ button_fr.onclick = function() {
 			summary[i].textContent = projectsData[i].summary_fr;
 		console.log("coucou");
 		console.log("switch to fr");
+		button_fr.className = 'current_language'
+		button_en.className = ''
 	}
 	currentLang = "fr"
 }

@@ -32,8 +32,26 @@ body
 
 a
 {
-	text-decoration: none;
-	color: green;
+	display: inline-block;
+	width: 46%;
+	height: 100%;
+	background-size: 100% 100%;
+	/* background: blue; */
+}
+
+#button_fr
+{
+	background: no-repeat url(../icons/flags/fr_rounded_rectangle.svg);
+}
+
+#button_en
+{
+	background: no-repeat url(../icons/flags/uk_rect.svg);
+}
+
+.current_language
+{
+	border-bottom: 1px solid #444444;
 }
 
 #project_wrap
