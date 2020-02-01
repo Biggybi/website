@@ -10,12 +10,10 @@ return `
 			<div class="summary"> ${projectTemplate.summary} </div>
 		</div>
 		<div class="giturl">
-			<a class="gitlaburl" href=" ${projectTemplate.giturl.laburl} ">
-				<img alt="" src="icons/gitlab/gitlab-icon-1-color-black-rgb.png">
-			</a>
-				<a class="githuburl" href=" ${projectTemplate.giturl.huburl} ">
-				<img alt="" src="icons/GitHub-Mark/PNG/GitHub-Mark-32px.png">
-			</a>
+			<a class="gitlaburl" href="${projectTemplate.giturl.laburl}">
+				<img alt="gitlab" src="icons/gitlab/gitlab-icon-1-color-black-rgb.png"></a>
+				<a class="githuburl" href="${projectTemplate.giturl.huburl}">
+				<img alt="github" src="icons/GitHub-Mark/PNG/GitHub-Mark-32px.png"></a>
 		</div>
 	</div>
 	`;
