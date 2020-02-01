@@ -179,10 +179,10 @@ a
 	/* display: block; */
 }
 
-.projectinner .summary
-{
-	/* padding-top: 2%; */
-}
+/* .projectinner .summary */
+/* { */
+/* 	/1* padding-top: 2%; *1/ */
+/* } */
 
 .githuburl, .gitlaburl
 {
@@ -190,7 +190,7 @@ a
 	/* display: inline-block; */
 	/* margin: 0 auto; */
 	vertical-align: text-top;
-	z-index: 3;
+	/* z-index: 0; */
 	padding: 0;
 	margin: 0;
 	width: 20px;
@@ -202,7 +202,7 @@ a
 	/* background: red; */
 	/* background: green; */
 	position: absolute;
-	right: 0;
+	/* right: 0; */
 	bottom: 1%;
 	right: 3%;
 	/* margin: auto 0 0 auto; */
@@ -218,11 +218,6 @@ a
 	margin: -10px;
 	padding: 0;
 	width: 55px;
-}
-
-.githuburl
-{
-	/* display: inline-block; */
 }
 
 /* #bsq */

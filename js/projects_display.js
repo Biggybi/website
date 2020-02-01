@@ -33,13 +33,13 @@ xhttp.send();
 
 var summary = document.getElementsByClassName('summary');
 console.log(summary);
-// var summary_fr = document.getElementsByClassName("summary_fr");
 var button_fr = document.getElementById('button_fr');
 console.log(button_fr);
 var button_en = document.getElementById('button_en');
 console.log(button_en);
 
 var currentLang = "en";
+// switch to en
 button_en.onclick = function() {
 	if (currentLang !== "en")
 	{
@@ -50,6 +50,7 @@ button_en.onclick = function() {
 	}
 	currentLang = "en";
 }
+// switch to fr
 button_fr.onclick = function() {
 	if (currentLang !== "fr")
 	{
