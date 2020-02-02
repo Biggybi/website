@@ -1,12 +1,13 @@
 function projectTemplate(projectTemplate) {
-	return `<div class="project" id ="${projectTemplate.id}">
+	return `<div class="project" id="${projectTemplate.id}">
 		<div class="projectHeader">
-			<h3> ${projectTemplate.name} </h3>
-			<h4> ${projectTemplate.type.join(" - ")} </h4>
+			<h3>${projectTemplate.name}</h3>
+			<h4>${projectTemplate.type.join(" - ")}</h4>
 		</div>
 		<a class="projecturl" href="#"></a>
 		<div class="projectinner">
-			<div class="summary"> ${projectTemplate.summary} </div>
+			<div class="summary lang_en lang_active">${projectTemplate.summary_en}</div>
+			<div class="summary lang_fr lang_inactive">${projectTemplate.summary_fr}</div>
 		</div>
 		<div class="giturl">
 			<a class="gitlaburl" href="${projectTemplate.giturl.laburl}">
