@@ -1,14 +1,14 @@
 {
 	"projects": [
 		{
-			"name": "Get Next Line",
+			"name": "Get_Next_Line",
 			"id": "gnl",
 			"giturl": {
 				"huburl": "https://www.github.com/Biggybi/gnl",
 				"laburl": ""
 			},
-			"summary": "Get next line of a buffer at each call",
-			"summary_fr": "Obtenir la ligne suivante d'un fichier à chaque appel",
+			"summary_en": "Get next line of a buffer at each call",
+			"summary_fr": "Obtient la ligne suivante d'un fichier à chaque appel",
 			"status": "finished",
 			"type": ["C"]
 		},
@@ -19,7 +19,7 @@
 				"huburl": "https://www.github.com/Biggybi/ft_ls",
 				"laburl": ""
 			},
-			"summary": "Implementation of Unix <strong>ls</strong> command",
+			"summary_en": "Implementation of Unix <strong>ls</strong> command",
 			"summary_fr": "Implémentation la commande Unix <strong>ls</strong>",
 			"status": "finished",
 			"type": ["C"]
@@ -31,7 +31,7 @@
 				"huburl": "https://www.github.com/Biggybi/ft_printf",
 				"laburl": ""
 			},
-			"summary": "Implementation of stdio.h <strong>printf</strong> function",
+			"summary_en": "Implementation of stdio.h <strong>printf</strong> function",
 			"summary_fr": "Implémentation de <strong>printf</strong> de stdio.h",
 			"status": "ongoing",
 			"type": ["C"]
@@ -43,9 +43,8 @@
 				"huburl": "https://www.github.com/Biggybi/bsq",
 				"laburl": ""
 			},
-			"summary": "Display the <strong>b</strong>iggest <strong>sq</strong>uare in a treacherous map",
-			"summary_fr": "<strong>b</strong>ig <strong>sq</strong>uare : Afficher le plus grand carré sur une carte piégée",
-
+			"summary_en": "Display the <strong>b</strong>iggest <strong>sq</strong>uare in a treacherous map",
+			"summary_fr": "<strong>b</strong>ig <strong>sq</strong>uare : Affiche le plus grand carré sur une carte piégée",
 			"status": "finished",
 			"type": ["C"]
 		},
@@ -56,7 +55,7 @@
 				"huburl": "https://www.github.com/Biggybi/website",
 				"laburl": ""
 			},
-			"summary": "This website, coded from scratch",
+			"summary_en": "This website, coded from scratch",
 			"summary_fr": "Ce site web, codé depuis rien",
 			"status": "ongoing",
 			"type": ["Node", "JS"]
@@ -68,7 +67,7 @@
 				"huburl": "https://www.github.com/Biggybi/dotfiles",
 				"laburl": ""
 			},
-			"summary": "My Linux config files for <strong>Vim</strong>, <strong>bash</strong>, and more, with easy installation script",
+			"summary_en": "My Linux config files for <strong>Vim</strong>, <strong>bash</strong>, and more, with easy setup script",
 			"summary_fr": "Mes fichiers de configuration pour <strong>Vim</strong>, <strong>bash</strong>, et plus, avec script d'installation",
 			"status": "never ending",
 			"type": ["Bash", "Vim"]
