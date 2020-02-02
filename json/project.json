@@ -79,7 +79,7 @@
 				"huburl": "https://www.github.com/Biggybi/resume",
 				"laburl": ""
 			},
-			"summary": "My humble résumé, build from Markdown to PDF and HTML",
+			"summary_en": "My humble résumé, build from Markdown to PDF and HTML",
 			"summary_fr": "Mon humble CV, compilé depuis Markdown en PDF et HTML",
 			"status": "ongoing",
 			"type": ["CSS", "MD", "Bash"]
