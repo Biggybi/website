@@ -30,7 +30,18 @@ body
 	/* position: relative; */
 }
 
-a
+#language_pick
+{
+	display: block;
+	position: absolute;
+	top: 12%;
+	right: 1%;
+	width: 100px;
+	height: 40%;
+	/* background: orange; */
+}
+
+#language_pick *
 {
 	display: inline-block;
 	width: 46%;
@@ -201,6 +212,16 @@ a
 /* { */
 /* 	/1* padding-top: 2%; *1/ */
 /* } */
+
+.lang_inactive
+{
+	display: none;
+}
+
+.lang_active
+{
+	display: block;
+}
 
 .githuburl, .gitlaburl
 {
