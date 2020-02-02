@@ -32,28 +32,33 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "json/project.json", true);
 xhttp.send();
 
-var currentLang = "lang_en"
+// var currentLang = "lang_en"
 const flags = document.getElementById('language_pick');
 console.log(flags);
 
 flags.addEventListener('click', function(e){
-	const activeFlag = document.querySelector('#language_pick .current_language');
 	if (e.target.className === 'current_language')
 		return ;
 	if (e.target.className != 'notcurrent_language')
 		return ;
+
+	// switch active flag
+	const activeFlag = document.querySelector('#language_pick .current_language');
 	e.target.classList.add('current_language');
 	e.target.classList.remove('notcurrent_language');
 	activeFlag.classList.add('notcurrent_language');
 	activeFlag.classList.remove('current_language');
 
-	const activeLangText = document.getElementsByClassName('lang_active');
-	Array.from(activeLangText).forEach(function(text){
+	// hide old language
+	const activeLangTexts = document.getElementsByClassName('lang_active');
+	Array.from(activeLangTexts).forEach(function(text){
 		text.classList.add('lang_inactive');
 		text.classList.remove('lang_active');
 	})
-	currentLang = e.target.id.substr(e.target.id.indexOf('_') + 1);
-	const newLangText = document.getElementsByClassName('lang_' + currentLang);
+
+	// display new language
+	var newLang = e.target.id.substr(e.target.id.indexOf('_') + 1);
+	const newLangText = document.getElementsByClassName('lang_' + newLang);
 	Array.from(newLangText).forEach(function(text) {
 		text.classList.add('lang_active');
 		text.classList.remove('lang_inactive');
