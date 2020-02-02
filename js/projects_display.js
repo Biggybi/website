@@ -18,13 +18,15 @@ function projectTemplate(projectTemplate) {
 	</div>`;
 }
 
-var xhttp = new XMLHttpRequest();
+// Note: for node
+// var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+var projectsData;
+var xhttp = new XMLHttpRequest(projectsData);
 xhttp.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
-		var response = JSON.parse(xhttp.responseText);
-		var projectsData = response.projects;
-		document.getElementById('project_wrap').innerHTML = `
-		${projectsData.map(projectTemplate).join('')} `
+		projectsData = JSON.parse(xhttp.responseText).projects;
+		document.getElementById('project_wrap').innerHTML =
+			`${projectsData.map(projectTemplate).join('')}`
 	}
 };
 xhttp.open("GET", "json/project.json", true);
