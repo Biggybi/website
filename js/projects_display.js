@@ -30,34 +30,30 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "json/project.json", true);
 xhttp.send();
 
-var button_fr = document.getElementById('button_fr');
-var button_en = document.getElementById('button_en');
-var currentLang = "en"
-button_fr.onclick = function() { switchLang('fr'); };
-button_en.onclick = function() { switchLang('en'); };
+var currentLang = "lang_en"
+const flags = document.getElementById('language_pick');
+console.log(flags);
 
-function switchLang(lang) {
-	if (currentLang === lang)
+flags.addEventListener('click', function(e){
+	const activeFlag = document.querySelector('#language_pick .current_language');
+	if (e.target.className === 'current_language')
 		return ;
-	var currentButton = document.getElementById('button_' + currentLang);
-	var switchButton = document.getElementById('button_' + lang);
-	// var switchSummary = 'summary_' + lang;
-	var summary = document.getElementsByClassName('summary');
-	var i = -1;
-	while (summary[++i])
-	{
-		if (lang == 'en')
-			summary[i].textContent = projectsData[i].summary_en;
-		else if (lang == 'fr')
-			summary[i].textContent = projectsData[i].summary_fr;
-	}
-	switchButton.className = 'current_language'
-	currentButton.className = ''
-	currentLang = lang;
-}
+	if (e.target.className != 'notcurrent_language')
+		return ;
+	e.target.classList.add('current_language');
+	e.target.classList.remove('notcurrent_language');
+	activeFlag.classList.add('notcurrent_language');
+	activeFlag.classList.remove('current_language');
 
-// function setupEvents()
-// {
-// }
-
-// window.onload = function() { setupEvents()};
+	const activeLangText = document.getElementsByClassName('lang_active');
+	Array.from(activeLangText).forEach(function(text){
+		text.classList.add('lang_inactive');
+		text.classList.remove('lang_active');
+	})
+	currentLang = e.target.id.substr(e.target.id.indexOf('_') + 1);
+	const newLangText = document.getElementsByClassName('lang_' + currentLang);
+	Array.from(newLangText).forEach(function(text) {
+		text.classList.add('lang_active');
+		text.classList.remove('lang_inactive');
+	})
+})
