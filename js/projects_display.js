@@ -31,40 +31,30 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "json/project.json", true);
 xhttp.send();
 
-var summary = document.getElementsByClassName('summary');
-console.log(summary);
 var button_fr = document.getElementById('button_fr');
-console.log(button_fr);
 var button_en = document.getElementById('button_en');
-console.log(button_en);
+var currentLang = "en"
+button_fr.onclick = function() { switchLang('fr'); };
+button_en.onclick = function() { switchLang('en'); };
 
-var currentLang = "en";
-// switch to en
-button_en.onclick = function() {
-	if (currentLang !== "en")
+function switchLang(lang) {
+	if (currentLang === lang)
+		return ;
+	var currentButton = document.getElementById('button_' + currentLang);
+	var switchButton = document.getElementById('button_' + lang);
+	// var switchSummary = 'summary_' + lang;
+	var summary = document.getElementsByClassName('summary');
+	var i = -1;
+	while (summary[++i])
 	{
-		var i = -1;
-		while (summary[++i])
-			summary[i].textContent = projectsData[i].summary;
-		console.log("switch to en");
-		button_en.className = 'current_language'
-		button_fr.className = ''
-	}
-	currentLang = "en";
-}
-// switch to fr
-button_fr.onclick = function() {
-	if (currentLang !== "fr")
-	{
-		var i = -1;
-		while (summary[++i])
+		if (lang == 'en')
+			summary[i].textContent = projectsData[i].summary_en;
+		else if (lang == 'fr')
 			summary[i].textContent = projectsData[i].summary_fr;
-		console.log("coucou");
-		console.log("switch to fr");
-		button_fr.className = 'current_language'
-		button_en.className = ''
 	}
-	currentLang = "fr"
+	switchButton.className = 'current_language'
+	currentButton.className = ''
+	currentLang = lang;
 }
 
 // function setupEvents()
