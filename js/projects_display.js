@@ -1,6 +1,5 @@
 function projectTemplate(projectTemplate) {
-return `
-	<div class="project" id ="${projectTemplate.id}">
+	return `<div class="project" id ="${projectTemplate.id}">
 		<div class="projectHeader">
 			<h3> ${projectTemplate.name} </h3>
 			<h4> ${projectTemplate.type.join(" - ")} </h4>
@@ -15,8 +14,7 @@ return `
 				<a class="githuburl" href="${projectTemplate.giturl.huburl}">
 				<img alt="github" src="icons/GitHub-Mark/PNG/GitHub-Mark-32px.png"></a>
 		</div>
-	</div>
-	`;
+	</div>`;
 }
 
 var xhttp = new XMLHttpRequest();
