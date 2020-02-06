@@ -1,15 +1,17 @@
-<div class="project">
-	<h3> ${project_json.name} </h3>
+<div class="project" id="${projectTemplate.id}">
 	<a class="projecturl" href="#"></a>
-	<div class="projectinner">
-		<p> ${project_json.type} </p>
-		<div class="giturl">
-			<a class="gitlaburl" href=" ${project_json.giturl.laburl} ">
-				<img alt="" src="icons/gitlab/gitlab-icon-1-color-black-rgb.png">
-			</a>
-			<a class="githuburl" href=" ${project_json.giturl.huburl} ">
-				<img alt="" src="icons/GitHub-Mark/PNG/GitHub-Mark-32px.png">
-			</a>
-		</div>
+	<div class="projectHeader">
+		<h3>${projectTemplate.name}</h3>
+		<h4>${projectTemplate.type.join(" - ")}</h4>
 	</div>
-</div>
+	<div class="projectinner">
+		<div class="summary lang_en lang_active">${projectTemplate.summary_en}</div>
+		<div class="summary lang_fr lang_inactive">${projectTemplate.summary_fr}</div>
+	</div>
+	<div class="giturl">
+		<a class="gitlaburl" href="${projectTemplate.giturl.laburl}">
+			<img alt="gitlab" src="icons/gitlab/gitlab-icon-1-color-black-rgb.png"></a>
+		<a class="githuburl" href="${projectTemplate.giturl.huburl}">
+			<img alt="github" src="icons/GitHub-Mark/PNG/GitHub-Mark-32px.png"></a>
+	</div>
+</div>;

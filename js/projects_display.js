@@ -1,10 +1,10 @@
 function projectTemplate(projectTemplate) {
 	return `<div class="project" id="${projectTemplate.id}">
+		<a class="projecturl" href="#"></a>
 		<div class="projectHeader">
 			<h3>${projectTemplate.name}</h3>
 			<h4>${projectTemplate.type.join(" - ")}</h4>
 		</div>
-		<a class="projecturl" href="#"></a>
 		<div class="projectinner">
 			<div class="summary lang_en lang_active">${projectTemplate.summary_en}</div>
 			<div class="summary lang_fr lang_inactive">${projectTemplate.summary_fr}</div>
@@ -32,35 +32,31 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "json/project.json", true);
 xhttp.send();
 
-// var currentLang = "lang_en"
-const flags = document.getElementById('language_pick');
-console.log(flags);
 
-flags.addEventListener('click', function(e){
-	if (e.target.className === 'current_language')
-		return ;
-	if (e.target.className != 'notcurrent_language')
-		return ;
 
-	// switch active flag
-	const activeFlag = document.querySelector('#language_pick .current_language');
-	e.target.classList.add('current_language');
-	e.target.classList.remove('notcurrent_language');
-	activeFlag.classList.add('notcurrent_language');
-	activeFlag.classList.remove('current_language');
+// var i = -1;
+// while (++i < projects.length)
+// 	projects[i].addEventListener('mouseover', toggle_project_url_menu, false)
 
-	// hide old language
-	const activeLangTexts = document.getElementsByClassName('lang_active');
-	Array.from(activeLangTexts).forEach(function(text){
-		text.classList.add('lang_inactive');
-		text.classList.remove('lang_active');
-	})
+// projectwrap.addEventListener('mouseover', function(e){
+// 	if (e.target.className !== 'projecturl')
+// 		return ;
 
-	// display new language
-	var newLang = e.target.id.substr(e.target.id.indexOf('_') + 1);
-	const newLangText = document.getElementsByClassName('lang_' + newLang);
-	Array.from(newLangText).forEach(function(text) {
-		text.classList.add('lang_active');
-		text.classList.remove('lang_inactive');
-	})
-})
+// 	const activeUrl = e.target.parentElement.children[3];
+// 	console.log(activeUrl);
+// 	activeUrl.className += 'giturl_active';
+// 	activeUrl.className -= 'giturl';
+// })
+
+// projectwrap.addEventListener('onmouseout', function(e){
+// 	console.log("mouse out target");
+// 	console.log(e.target);
+// 	if (e.target.className !== 'projecturl')
+// 		return ;
+
+// 	const activeUrl = e.target.parentElement.children[3];
+// 	console.log(activeUrl);
+// 	activeUrl.className -= 'giturl_active';
+// 	// activeUrl.className += 'giturl';
+// })
+
