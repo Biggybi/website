@@ -156,6 +156,7 @@ body
 .projecturl
 {
 	position: absolute;
+	/* pointer-events: none; */
 	/* display: inline-block; */
 	height: 100%;
 	width: 100%;
