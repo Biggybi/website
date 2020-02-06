@@ -32,32 +32,3 @@ xhttp.onreadystatechange = function() {
 };
 xhttp.open("GET", "json/project.json", true);
 xhttp.send();
-
-
-
-// var i = -1;
-// while (++i < projects.length)
-// 	projects[i].addEventListener('mouseover', toggle_project_url_menu, false)
-
-// projectwrap.addEventListener('mouseover', function(e){
-// 	if (e.target.className !== 'projecturl')
-// 		return ;
-
-// 	const activeUrl = e.target.parentElement.children[3];
-// 	console.log(activeUrl);
-// 	activeUrl.className += 'giturl_active';
-// 	activeUrl.className -= 'giturl';
-// })
-
-// projectwrap.addEventListener('onmouseout', function(e){
-// 	console.log("mouse out target");
-// 	console.log(e.target);
-// 	if (e.target.className !== 'projecturl')
-// 		return ;
-
-// 	const activeUrl = e.target.parentElement.children[3];
-// 	console.log(activeUrl);
-// 	activeUrl.className -= 'giturl_active';
-// 	// activeUrl.className += 'giturl';
-// })
-
