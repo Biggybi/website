@@ -186,7 +186,7 @@ body
 
 .projectHeader h3
 {
-    display: inline-block;
+    /* display: inline-block; */
     font-variant: all-small-caps;
     /* position: relative; */
     width: 100%;
