@@ -1,31 +1,34 @@
 {
 	"projects": [
 		{
-			"name": "Get_Next_Line",
+			"name_en": "Get_Next_Line",
+			"name_fr": "Get_Next_Line",
 			"id": "gnl",
 			"giturl": {
 				"huburl": "https://www.github.com/Biggybi/gnl",
 				"laburl": ""
 			},
-			"summary_en": "Get next line of a buffer at each call",
+			"summary_en": "Get next line of a file at each call",
 			"summary_fr": "Obtient la ligne suivante d'un fichier à chaque appel",
 			"status": "finished",
 			"type": ["C"]
 		},
 		{
-			"name": "ft_ls",
+			"name_en": "ft_ls",
+			"name_fr": "ft_ls",
 			"id": "ft_ls",
 			"giturl": {
 				"huburl": "https://www.github.com/Biggybi/ft_ls",
 				"laburl": ""
 			},
 			"summary_en": "Implementation of Unix <strong>ls</strong> command",
-			"summary_fr": "Implémentation la commande Unix <strong>ls</strong>",
+			"summary_fr": "Implémentation de la commande Unix <strong>ls</strong>",
 			"status": "finished",
 			"type": ["C"]
 		},
 		{
-			"name": "ft_printf",
+			"name_en": "ft_printf",
+			"name_fr": "ft_printf",
 			"id": "ft_printf",
 			"giturl": {
 				"huburl": "https://www.github.com/Biggybi/ft_printf",
@@ -37,7 +40,8 @@
 			"type": ["C"]
 		},
 		{
-			"name": "BSQ",
+			"name_en": "BSQ",
+			"name_fr": "BSQ",
 			"id": "bsq",
 			"giturl": {
 				"huburl": "https://www.github.com/Biggybi/bsq",
@@ -49,7 +53,8 @@
 			"type": ["C"]
 		},
 		{
-			"name": "Website",
+			"name_en": "Website",
+			"name_fr": "Website",
 			"id": "website",
 			"giturl": {
 				"huburl": "https://www.github.com/Biggybi/website",
@@ -61,7 +66,8 @@
 			"type": ["Node", "JS"]
 		},
 		{
-			"name": "Dotfiles",
+			"name_en": "Dotfiles",
+			"name_fr": "Dotfiles",
 			"id": "dotfiles",
 			"giturl": {
 				"huburl": "https://www.github.com/Biggybi/dotfiles",
@@ -73,7 +79,8 @@
 			"type": ["Bash", "Vim"]
 		},
 		{
-			"name": "Résumé",
+			"name_en": "Résumé",
+			"name_fr": "CV",
 			"id": "cv",
 			"giturl": {
 				"huburl": "https://www.github.com/Biggybi/resume",

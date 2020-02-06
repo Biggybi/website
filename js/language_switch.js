@@ -1,8 +1,8 @@
 // var currentLang = "lang_en"
-const flagsBlock = document.getElementById('language_pick');
+const flags = document.getElementById('language_pick');
 // console.log(flags);
 
-flagsBlock.addEventListener('click', function(e) {
+flags.addEventListener('click', function(e) {
 	// check toggle
 	if (e.target.className === 'current_language')
 		return ;
@@ -10,7 +10,7 @@ flagsBlock.addEventListener('click', function(e) {
 		return ;
 
 	// switch active flag
-	const activeFlag = document.querySelector('#language_pick .current_language');
+	const activeFlag = document.querySelector('.current_language');
 	e.target.classList.add('current_language');
 	e.target.classList.remove('notcurrent_language');
 	activeFlag.classList.add('notcurrent_language');
