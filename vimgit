@@ -1,0 +1,10 @@
+#!/bin/bash
+[ -e js/ ] && files="${files} js/*.js"
+[ -e str/ ] && files="${files} src/*.c"
+[ -e inc*/ ] && files="${files} inc*/*.h"
+[ -e html/ ] && files="${files} html/*.html"
+[ -e css/ ] && files="${files} css/*.css"
+[ -e json/ ] && files="${files} json/*.json"
+[ -e index.html ] && files="${files} index.html"
+echo $files
+# vi $files
